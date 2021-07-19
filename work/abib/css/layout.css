@@ -1,0 +1,128 @@
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    min-width: 1400px;
+    letter-spacing: -0.025em;
+    color:#4a4947;
+}
+
+body.hidden{ overflow: hidden;} /*스크롤 움직이지않게 제이쿼리에있음*/
+
+.wrapper{ position: relative; z-index: 1;}
+header {background: #eee;}
+header img{width: 100%; height: 100%; object-fit: cover; }
+header h1{ font-family: 'Montserrat', sans-serif; font-size:35px; font-weight:600; color: #fff; position: fixed; left: 50px; top: 50px; z-index: 3; transition: color 0.5s;}
+header h1 a{display: block; height: 100%;}
+header a.menu_btn {position: fixed; top: 50px; right:50px; width: 50px; height: 50px; transition:all 0.5s;    z-index: 3; padding: 8px 9px;  }
+header a.menu_btn span {display: block; height: 2px; background: #fff; margin: 10px 0;  }
+
+/* 메뉴  */
+header .menu {position: fixed; top: 0; right:-100%; width: 100%; overflow: hidden; z-index: 10; }
+header .menu  a.close {  width: 50px; height: 50px; position: absolute; top: 80px; right:80px; z-index: 2; border-radius: 50%; transition: 0.4s;}
+header .menu  a.close:hover {      box-shadow: 2px 2px 2px #eee;
+    color: #858585;}
+header .menu  a.close span {display: block; width: 25px; height: 2px; background: #4a4948;
+    position: absolute; top: 0; right: 0; }
+header .menu  a.close span:nth-child(1) {transform: translate(-50% , -50%) rotate(
+    45deg ); top: 50%;}
+header .menu  a.close span:nth-child(2) {    transform: translate(-50% , -50%) rotate(
+    -45deg); top: 50%;}
+header .menu .img_wrap {float: left; width: 50%; height:100vh; }
+header .menu .img_wrap img {width: 100%; height: 100%; object-fit: cover; }
+header .menu .menu_list { position: relative; background: #fff; float: left; width: 50%; height: 100vh;  padding: 130px 136px; color: #4a4948; overflow: auto;} 
+header .menu .menu_list li {font-family: 'Montserrat', sans-serif; margin-bottom: 25px; font-size: 22px;   }
+header .menu .menu_list li.on{  color:#000; font-weight: 600; opacity: 1;}
+header .menu .menu_list li a {display: block; transition: color 0.3s; opacity: 0.6;}
+header .menu .menu_list li a:hover {color:#000; opacity: 1;  font-weight: 600;}
+
+header .menu::after{ content:""; width: 50%; position: absolute; bottom: 0; right: 0; height: 150px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+99 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */ }   /*메뉴하단그라데이션*/
+
+
+
+header .user_nav { position: fixed; right: 150px; top: 50px; z-index: 3;}
+header .user_nav li {float: left; text-align: center; margin-left: 30px; font-size:12px; color:#fff; font-weight: 500;  font-family: 'Montserrat', sans-serif;}
+header .user_nav li a {display: block; }
+header .user_nav li a i {display: block; line-height: 40px;width: 40px; height: 40px; font-size:15px;}
+header .user_nav li a i:hover { border-radius: 50%; background:rgba(255,255,255,0.2);  }
+
+header .sns_nav { position: fixed; left: 50px; bottom: 50px; z-index: 3;}
+header .sns_nav li { width: 40px; height: 40px; margin-bottom: 10px;  }
+header .sns_nav li a{ display: block; height: 100%; transition: 0.5s; border-radius: 50%;}
+header .sns_nav li:nth-child(1) a { background: url(../images/sns_kakao.png) no-repeat; background-size: 40px; background-position:center; }
+header .sns_nav li:nth-child(2) a { background: url(../images/sns_insta.png) no-repeat; background-size: 40px; background-position:center; }
+header .sns_nav li:nth-child(3) a { background: url(../images/sns_youtube.png) no-repeat; background-size: 40px; background-position:center; }
+
+header.on .sns_nav li:nth-child(1):hover a,
+header .sns_nav li:nth-child(1):hover a { background: url(../images/sns_kakao_h.png) no-repeat; background-size: 40px; background-position:center; }
+header.on .sns_nav li:nth-child(2):hover a,
+header .sns_nav li:nth-child(2):hover a { background: url(../images/sns_insta_h.png) no-repeat; background-size: 40px; background-position:center; }
+header.on .sns_nav li:nth-child(3):hover a,
+header .sns_nav li:nth-child(3):hover a { background: url(../images/sns_youtube_h.png) no-repeat; background-size: 40px; background-position:center; }
+
+header .naver_talk { position: fixed; right: 133px ;bottom: 63px; width: 70px; height: 70px;border-radius: 50%;
+box-shadow: 0 20px 60px rgb(74 73 72 / 10%); background-size: contain; z-index: 3;}
+header .naver_talk a {display: block; }
+
+header .navi_wrap { position: fixed; right: 50px; bottom: 50px; z-index: 3; }
+header .navi_wrap a{ display: block; width: 40px; height: 40px; font-size: 30px; color:#fff; text-align: center;line-height: 40px; }
+header .navi_wrap a:hover{ border-radius: 50%; background:rgba(255,255,255,0.2); }
+header .navi_wrap a i{}
+header .navi_wrap a.top_btn{ margin-bottom: 20px;}
+header .navi_wrap a.bottom_btn{}
+
+
+/*스크롤시 변환*/
+header.on h1{ color:#4a4948;}
+header.on .user_nav li{ color:#4a4948; }
+header.on a.menu_btn span {background: #4a4948; }
+
+header.on .sns_nav li:nth-child(1) a { background: url(../images/sns_kakao_b.png) no-repeat; background-size: 40px; background-position:center; }
+header.on .sns_nav li:nth-child(2) a { background: url(../images/sns_insta_b.png) no-repeat; background-size: 40px; background-position:center; }
+header.on .sns_nav li:nth-child(3) a { background: url(../images/sns_youtube_b.png) no-repeat; background-size: 40px; background-position:center; }
+
+header.on .navi_wrap a.top_btn { color:#4a4948;  }
+header.on .navi_wrap a.bottom_btn { color:#4a4948;  }
+
+header.on .navi_wrap a.bottom_btn:hover {border-radius: 50%; background:rgba(0,0,0,0.1);}
+header.on .navi_wrap a.top_btn:hover { border-radius: 50%; background:rgba(0,0,0,0.1);}
+
+
+
+
+/* footer */
+footer { padding: 80px 0 114px; background: #000; color: #fff; position: relative; z-index: 1;}
+.foot_nav { overflow: hidden; border-bottom: 1px solid #363434; }
+.foot_nav ul{ float:right; overflow: hidden; line-height: 50px;  }
+.foot_nav ul li {float: left; font-family: 'Montserrat', sans-serif;  margin-left: 50px; }
+.foot_nav ul li a{ display: block;}
+.foot_nav ul li a:hover{opacity: 0.5;}
+
+.foot_con { position: relative; font-weight: 300; color:#9e9e9e;}
+.foot_con .info { padding-top: 50px; }
+.foot_con .info .corp_area{ }
+.foot_con .info .corp_area a::after {content:""; display: inline-block; width: 2px; height: 2px; background: #9e9e9e; vertical-align: 5px; margin:0 5px;}
+.foot_con .info .corp_area a:last-child::after{ content: none;}
+.foot_con .info .corp_area .bold{ font-weight:bold ; color:#fff;}
+.foot_con .info address{ line-height: 30px; font-size:14px; padding:50px 0 20px;  }
+.foot_con .info address span{display:inline-block;width: 1px;height: 10px; vertical-align: 1px;background: #767676; margin:0 10px;}
+.foot_con .info p.copy {font-size:14px; font-family: 'Montserrat', sans-serif;  }
+.foot_con .link_wrap { position:absolute; bottom: 0; right: 0;}
+
+.foot_con .link_wrap select { font-family: 'Montserrat', sans-serif; width: 270px; height: 45px; padding-left: 20px; font-weight: 500;  background:#fff url(../images/foot_arrow.png) no-repeat; background-position:right 20px center ; background-size:25px; cursor: pointer;} 
+
+.foot_con .customer { position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 14px; }
+.foot_con .customer strong { display: block; color: #fff; font-family: 'Montserrat', sans-serif; }
+.foot_con .customer a { display: block; color: #fff; font-size: 30px; font-weight: bold; padding: 10px 0; font-family: 'Poppins', sans-serif;}
+.foot_con .customer p { line-height: 30px;}
+
+
+/*  
+메인 화면 고정상태로 스크롤 내려가는법
+plan wrap에 탭누르면 하나씩 fade-down되게하는법
+푸터 셀렉트 눌렀을때 테두리없애는법 */
