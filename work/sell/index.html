@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/favicon_logo.png" >
+    <title>셀트리온 모바일적응형</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-1.12.4.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/custom.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="notice_area">
+            <h2 class="blind">공지사항</h2>
+            <div class="txt_wrap clear">
+                <p>Coronavirus (COVID-19) - Latest updates from O&3</p>
+                <a href="">
+                    <span>more</span>    
+                    <i class="fi-rr-cross-small"><span class="blind">close버튼</span></i>
+                </a>
+            </div>
+        </div>
+        <div class="user_nav">
+            <div class="gnb_area">
+                <div class="gnb_wrap">
+                    <a href="" class="menu_btn"><i></i><i></i><i></i><span class="blind">카테고리</i></a>
+                </div>
+                <h1><a href=""><span class="blind">로고</span></a></h1>
+                <div class="search_wrap">
+                    <a href="" class="search_btn"><i class="fi-rr-search"></i><span class="blind">검색</span></a>  <!--<i class="fi-rr-cross-small">x표시-->
+                </div>
+                <form action="" >
+                    <fieldset>
+                        <legend class="blind">텍스트 입력란</legend>
+                        <input type="text" placeholder="텍스트를 입력하세요" >
+                        <button type="button"> <i class="fi-rr-search"></i><span class="blind">검색</span></a></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="menu_nav"><!--햄버거 나옴  -->
+            <div class="menu_head">
+                <a href="" class="close"><i class="fi-rr-cross-small"></i><span class="blind">닫기</span></a>
+            </div>
+            <ul class="menu_list">
+                <li><!--아코디언 -->
+                    <a href="" class="dept1" data-num="01">ABOUT US <i class="fi-rs-angle-small-right"></i></a>
+                    <div class="menu_com nav_sub01"><!--아코디언 -->
+                        <div class="menu_head">
+                            <a href="" class="side_btn"><i class="fi-rr-arrow-left"></i><span class="blind">메뉴로돌아가기</span></a>
+                            <h2>ABOUT US</h2>             
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="">Company <span class="bottom_btn"><i class="fi-rr-caret-down"></i></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">회사소개</a></li>
+                                        <li><a href="">연혁</a></li>
+                                        <li><a href="">CI</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Leadership <span class="bottom_btn"><i class="fi-rr-caret-down"></i></span></a>
+                                <div class="sub">
+                                    <ul>
+                                        <li><a href="">Chairman 메시지</a></li>
+                                        <li><a href="">CEO 메시지</a></li>
+                                        <li><a href="">사회공헌</a></li>
+                                        <li><a href="">환경경영</a></li>
+                                        <li><a href="">Responsibility</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="" class="more">more</a>
+                    </div>
+                </li> <!--1-->
+                <li>
+                    <a href="" class="dept1" data-num="02">BUSINESS <i class="fi-rs-angle-small-right"></i></a>
+                    <div class="menu_com nav_sub02">
+                        <div class="menu_head">
+                            <a href="" class="side_btn"><i class="fi-rr-arrow-left"></i><span class="blind">메뉴로돌아가기</span></a>
+                            <h2>BUSINESS</h2>             
+                        </div>
+                        <ul class="list_area">
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area1.jpg" alt="">
+                                    </div>
+                                    <h3>Biosimilar</h3>
+                                    <p>셀트리온은 세계 최초로 항체 바이오시밀러인 램시마를 글로벌 시장에 선보이며 합리적인 비용으로 더 많은 환자에게 치료 혜택을 제공함으로써 사회경제적 혁신을 이루었습니다. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area2.jpg" alt="">
+                                    </div>
+                                    <h3>Small Molechles</h3>
+                                    <p>케미컬의약품 산업에서 새로운 성장 가능성을 발견한 셀트리온은 세계 케미컬의약품 시장 진출을 위한 글로벌 케미컬 프로젝트 (Global Chemical Project, GCP)를 추진하여 세계 제약시장의 주도권을 확보한 종합 생명공학 기업으로 거듭나고자 합니다. </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area3.jpg" alt="">
+                                    </div>
+                                    <h3>New Medicines</h3>
+                                    <p>셀트리온은 자가면역질환 치료제 램시마IV(정맥주사제형)의 투약 편의성을 개선한 램시마SC(피하주사제형)의 개발에 성공했습니다.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area4.jpg" alt="">
+                                    </div>
+                                    <h3>Vistion 2030</h3>
+                                    <p>세계적 수준의 R&D 역량을 바탕으로 첨단 의약품을 개발합니다</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> <!--2-->
+                <li>
+                    <a href="" class="dept1" data-num="03">SCIENCE <i class="fi-rs-angle-small-right"></i></a>
+                    <div class="menu_com nav_sub03">
+                        <div class="menu_head">
+                            <a href="" class="side_btn"><i class="fi-rr-arrow-left"></i><span class="blind">메뉴로돌아가기</span></a>
+                            <h2>SCIENCE</h2>             
+                        </div>
+                        <ul class="list_area">
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area5.jpg" alt="">
+                                    </div>
+                                    <h3>Pipeline</h3>
+                                    <p>세계인의 건강하고 행복한 삶을 위한 다양한 기회를 모색합니다</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area6.jpg" alt="">
+                                    </div>
+                                    <h3>Technology</h3>
+                                    <p>셀트리온의 의약품과 다양한 바이오·케미컬의약품 정보를 전해드립니다</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area7.jpg" alt="">
+                                    </div>
+                                    <h3>R&D</h3>
+                                    <p>인천 송도에 위치한 셀트리온 생명공학 연구소는 신약 후보물질 탐색, 유전자 재조합을 통한 세포주 개발 및 발현, 바이오의약품 대규모 생산, 품목 허가를 위한 동등성 평가, 제품 특성, 작용기전 연구 등 바이오 산업 전 과정에 걸쳐 축적한 연구 역량 및 기술을 보유하고 있습니다.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li><!--3-->
+                <li>
+                    <a href="" class="dept1" data-num="04">PRODUCTS<i class="fi-rs-angle-small-right"></i></a>
+                    <div class="menu_com nav_sub04">
+                        <div class="menu_head">
+                            <a href="" class="side_btn"><i class="fi-rr-arrow-left"></i><span class="blind">메뉴로돌아가기</span></a>
+                            <h2>PRODUCTS</h2>             
+                        </div>
+                        <ul class="list_area">
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area8.jpg" alt="">
+                                    </div>
+                                    <h3>Products</h3>
+                                    <p>세계 시장에 판매되는 셀트리온의 의약품입니다</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="images/list_area9.jpg" alt="">
+                                    </div>
+                                    <h3>생산</h3>
+                                    <p>글로벌 GMP 시스템과 철저한 품질 관리를 통해 신뢰받는 의약품을 생산합니다</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li><!--4-->
+                <li>
+                    <a href="" class="dept1" data-num="05">IR</a>
+                </li>
+                <li>
+                    <a href="" class="dept1" data-num="06">PR</a>
+                </li>
+                <li>
+                    <a href="" class="dept1" data-num="07">CAREERS</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_area">
+            <div class="main_vis">
+                <video autoplay="" muted="" playsinline="" loop="">
+                    <source src="images/main.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="txt_wrap here"> <!--here 스크롤이벤트-->
+                <h2> Embrace Life!</h2>
+                <p>  글로벌 헬스케어 리딩기업 셀트리온<br>
+                    인류의 더 건강하고 행복한 삶을 위한 우리의 도전은 계속됩니다</p>
+                <a href="" class="link01"> BIOLOGICS</a>
+                <a href="" class="link02"> COVID-19</a>
+            </div>
+            <div class="main_slide_wrap"><!--메인 스와이퍼-->
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <strong>Pharmaceuticals</strong>
+                            <p>1,000조 원 규모의 글로벌 케미컬의약품 </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>Future</strong>
+                            <p>새로운 패러다임을 제시할 첨단 의약품</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>Biologics </strong>
+                            <p>합리적 비용으로 고품질 바이오의약품 치료를 받을 수 있는 기회</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="sns_wrap">
+                <ul class="sns">
+                    <li><a href=""><img src="images/m_facebook.png" alt="페이스북바로가기"></a></li>
+                    <li><a href=""><img src="images/m_blog.png" alt="블로그바로가기"></a></li>
+                    <li><a href=""><img src="images/m_insta.png" alt="인스타북바로가기"></a></li>
+                    <li><a href=""><img src="images/m_youtube.png" alt="유튜브바로가기"></a></li>
+                </ul>
+            </div>
+        </div> <!-- //    main_area -->
+
+        <div class="main_con" >
+            <div class="img_list ">
+                <div class="img_wrap main_img01" data-aos="fade-down"
+                data-aos-duration="1000" data-aos-delay="100">
+                    <img src="images/main_con01.jpg" alt="">
+                </div>
+                <div class="img_wrap main_img02 " data-aos="fade-down"
+                data-aos-duration="1200" data-aos-delay="300">
+                    <img src="images/main_con02.jpg" alt="">
+                </div>
+                <div class="img_wrap main_img03" data-aos="fade-down"
+                data-aos-duration="1500" data-aos-delay="500">
+                    <img src="images/main_con03.jpg" alt="">
+                </div>
+            </div>
+            <div class="txt_wrap inner" data-aos="fade-down"
+            data-aos-duration="1500" data-aos-delay="700">
+                <em>Small Molecules <br>
+                    글로벌 케미컬의약품 시장을 개척해 미래 성장 동력을 확보합니다</em>
+                <h2 class="bold"> 2018년 말 미국 FDA로부터 허가 받은 첫 케미컬 개량신약인 HIV 치료제 테믹시스를 시작으로,<span class="on">입찰 시장 공략, 자체 글로벌 유통망 구축</span> 을 통해 세계 케미컬의약품 시장의 주도권을  실현해 나가고 있습니다.</h2>
+                <p class="light">
+                    세계의약품 시장의 3분의 2를 차지하는 케미컬의약품 시장은 2021년까지 그 규모가 약 1,000조 원에 달할 것으로 예상되고 있습니다. 케미컬의약품 산업에서 새로운 성장 가능성을 발견한 셀트리온은 세계 케미컬의약품 시장 진출을 위한 글로벌 케미컬 프로젝트 (Global Chemical Project, GCP)를 추진하여 세계 제약시장의 주도권을 확보한 종합 생명공학 기업으로 거듭나고자 합니다.</p>
+            </div>
+        </div> <!-- //     main_con -->
+
+        <div class="tap_area inner">
+            <div class="tap_con" data-aos="fade-down"
+            data-aos-duration="1000" data-aos-delay="100">
+                <div id="con01" class="tap_wrap on">
+                    <div class="img_wrap">
+                        <img src="images/tap01.png" alt="">
+                    </div>
+                    <span class="tit">램시마 SC</span>
+                    <strong>램시마 IV와 SC 투약 시 <br> 혈중농도 변화</strong>
+                    <span class="bar"></span>
+                    <p>셀트리온이 제안하는 듀얼 포뮬레이션(Dual Formulation) 치료옵션은 교차처방으로 인한 면역원성 및 안전성 걱정 없이 빠른 약효가 필요한 환자에게 램시마IV를 처방한 후 상태가 호전된 환자에게 램시마SC를 처방함으로써 약효를 유지하며 치료 효과를 극대화 할 수 있는 처방 전략입니다.</p>
+                </div>
+                <div id="con02" class="tap_wrap">
+                    <div class="img_wrap">
+                        <img src="images/tap02.png" alt="">
+                    </div>
+                    <span class="tit">ADC 기술</span>
+                    <strong>바이오베터 <br> 항체-약물 결합체의 구조</strong>
+                    <span class="bar"></span>
+                    <p>항체-약물 접합(ADC, Antibody-Drug Conjugate) 기술은 암세포를 선택적으로 선별하는 항체에 항암 치료 약물을 결합해 암세포를 효과적으로 제거하는 차세대 치료 기술입니다. 셀트리온은 글로벌 제약 기업과의 공동 연구를 통해 유방암을 비롯한 다양한 종양 타겟의 ADC 바이오베터를 개발하고 있습니다..</p>
+                </div>
+                <div id="con03" class="tap_wrap">
+                    <div class="img_wrap">
+                        <img src="images/tap03.jpg" alt="">
+                    </div>
+                    <span class="tit">신약개발</span>
+                    <strong>파트너십을 통한<br> 신약 개발 </strong>
+                    <span class="bar"></span>
+                    <p>셀트리온은 산업계, 학계, 연구기관과 전략적 협업을 통해 신약개발의 R&D 효율성을 증대하고 국내외 바이오 생태계 활성화에 기여해 나갈 것입니다. 이를 위해 라이선스 인·아웃 및 공동 개발을 적극적으로 활용하여 파이프라인을 확대하고 있습니다.</p>
+                </div>
+                <div id="con04" class="tap_wrap">
+                    <div class="img_wrap">
+                        <img src="images/tap04.png" alt="">
+                    </div>
+                    <span class="tit">CDMO</span>
+                    <strong>신약 후보 물질 선별 <br> 세포주 개발</strong>
+                    <span class="bar"></span>
+                    <p> 셀트리온의 CDMO 사업은 개발·생산·임상 운영·허가 분야의 전문 역량을 제공하고 개발 비용을 분담하여 파트너사의 신약 후보물질을 공동 개발하는 모델입니다. 셀트리온과 CDMO 계약을 맺은 파트너사는 셀트리온의 역량을 활용하여 신약 후보물질을 빠르게 개발할 수 있으며, 셀트리온은 해당 후보 물질에 대해 우선적인 도입 권리를 확보할 수 있어 양사간 효율적인 성장을 가능하게 합니다.</p>
+                </div>
+                <div id="con05" class="tap_wrap">
+                    <div class="img_wrap">
+                        <img src="images/tap05.png" alt="">
+                    </div>
+                    <span class="tit">디지털 헬스케어</span>
+                    <strong>헬스케어<br> 데이터 통합 플랫폼</strong>
+                    <span class="bar"></span>
+                    <p>셀트리온은 헬스케어 데이터 통합 플랫폼을 구축함으로써 데이터에 기반한 맞춤형 질환 예방 및 관리 솔루션을 개발하고자 합니다. 셀트리온의 디지털 헬스케어 사업은 의료정보 뿐만 아니라 첨단 ICT 기술 접목을 통한 건강정보를 활용하여 환자 중심의 의료 생태계를 구현하고, 다양한 산업 영역과의 협업을 통해 가치 있는 새로운 서비스를 창출하는데 그 의의를 두고 있습니다..</p>
+                </div>
+                <div id="con06" class="tap_wrap">
+                    <div class="img_wrap">
+                        <img src="images/tap06.jpg" alt="">
+                    </div>
+                    <span class="tit">항암제</span>
+                    <strong>바이오시밀러<br>퍼스트 무버 </strong>
+                    <span class="bar"></span>
+                    <p>셀트리온은 항암제 바이오시밀러 분야에서 빠른 시장 성장으로 높은 경쟁력을 입증하고 있습니다.
+                        셀트리온이 개발한 혈액암 치료용 바이오시밀러 트룩시마는 지난 2017년 유럽 EMA의 판매허가를 받은 후 출시 1년 만에 유럽시장 점유율 32%를 달성했으며, 유방암∙위암 치료용 바이오시밀러 허쥬마는 출시 반년 만에 유럽 시장에서 약 10%의 시장 점유율을 기록했습니다.</p>
+                </div>
+            </div><!--tap_con-->
+            <ul class="tap_nav">
+                <li class="on">
+                    <a href="" >
+                        <span>01</span>
+                        <em>램시마 IV와 SC 투약 시 <br> 혈중농도 변화</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>02</span>
+                        <em>바이오베터 <br> 항체-약물 결합체의 구조</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>03</span>
+                        <em>파트너십을 통한 <br> 신약 개발</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>04</span>
+                        <em>신약 후보 물질 선별 <br> 세포주 개발</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>05</span>
+                        <em>헬스케어 <br> 데이터 통합 플랫폼</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>06</span>
+                        <em>바이오시밀러 <br> 퍼스트 무버</em>
+                    </a>
+                </li>
+            </ul><!--tap_nav-->
+        </div><!--//     tap_area   -->
+
+        <div class="frame_slide_wrap " ><!--프레임 스와이퍼-->
+            <div class="swiper-container frame_slider" data-aos="fade-down"
+            data-aos-duration="2500">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame01.jpg" alt="">
+                            </div>
+                            <strong class="tit">TECHNOLOGY</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame02.png" alt="">
+                            </div>
+                            <strong class="tit">MANAGMENT</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame03.jpg" alt="">
+                            </div>
+                            <strong class="tit">QUALITY</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame04.jpg" alt="">
+                            </div>
+                            <strong class="tit">SAFETY</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame05.jpg" alt="">
+                            </div>
+                            <strong class="tit">EFFICACY</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame06.jpg" alt="">
+                            </div>
+                            <strong class="tit">CRITICAL</strong>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame07.jpg" alt="">
+                            </div>
+                            <strong class="tit">ATTRIBUTE</strong>
+                        </div>
+                    </div>    
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame08.jpg" alt="">
+                            </div>
+                            <strong class="tit">PROCESS</strong>
+                        </div>
+                    </div> 
+                    <div class="swiper-slide">
+                        <div class="box_wrap">  
+                            <div class="img_wrap">
+                                <img src="images/frame09.jpg" alt="">
+                            </div>
+                            <strong class="tit">PARAMETER</strong>
+                        </div>
+                    </div>                    
+                </div>            
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="btn_wrap">
+                <a href="" class="btn prev"><span class="blind">이전</span><i class="fi-rr-angle-left"></i></a>
+                <a href="" class="btn next"><span class="blind">다음</span><i class="fi-rr-angle-right"></i></a>
+            </div>
+        </div><!-- //      frame_slide_wrap   -->
+
+        <div class="back_img">
+            <div class="img_wrap">
+                <img src="images/back_img01.jpg" alt="셀트리온">
+            </div>
+            <div class="txt_wrap">
+                <em>SELLTRION</em>
+                <span>성장의 기틀을 다지다</span>
+            </div>
+        </div>
+
+        <div class="num_slide_wrap"><!-- 숫자슬라이드 스와이퍼-->
+            <div class="swiper-container num_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img_wrap">
+                            <img src="images/num01.jpg" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <em>글로벌 케미컬 프로젝트 Ⅰ</em>
+                            <strong>세계적 수준의 개발·임상·허가노하우 축적</strong>
+                            <p>바이오시밀러 상업화 과정에서 축적한 세계 최고 수준의 개발·임상·허가 역량
+                                케미컬의약품 생산 전문 계열사와의 협업 시너지</p>
+                            <a href="" class="more">Find-out-more<i class="fi-rr-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_wrap">
+                            <img src="images/num02.jpg" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <em>글로벌 케미컬 프로젝트 Ⅱ</em>
+                            <strong>선진 규제기관으로부터 인증받은 생산∙품질 역량</strong>
+                            <p>국내 최초 미국 FDA 및 영국 MHRA 인증 받은 생산 설비 연간 50억정 규모 생산 CAPACITY 보유
+                                제조, 품질관리, 포장, 유통 전반에 걸친 안정적 제품공급망(SCM)</p>
+                            <a href="" class="more">Find-out-more<i class="fi-rr-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_wrap">
+                            <img src="images/num03.png" alt="">
+                        </div>
+                        <div class="txt_wrap">
+                            <em>글로벌 케미컬 프로젝트 Ⅲ</em>
+                            <strong>케미컬의약품 특화 R&D 시설 보유</strong>
+                            <p>케미컬의약품 전문 연구소 운영 개량신약·합성신약·제네릭의약품 파이프라인 지속 개발
+                                약물 전달 시스템 등 플랫폼 기술 연구 생산 공정 효율화 연구</p>
+                            <a href="" class="more">Find-out-more<i class="fi-rr-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="btn_wrap">
+                    <a href="" class="btn prev"><span class="blind">이전</span></a>
+                    <div class="swiper-pagination"></div>
+                    <a href="" class="btn next"><span class="blind">다음</span></a>
+                </div>               
+            </div>
+        </div><!--  //     num_slide_wrap   -->
+
+        <div class="video_area" >
+            <a href="">
+                <div class="vod_box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="img_wrap">
+                        <img src="images/vod_img.jpg" alt="">
+                        <span>▶</span>
+                    </div>
+                    <div class="vod_wrap on">
+                        <video autoplay="" muted="" playsinline="" loop="" controls="">
+                            <source src="images/vod_wrap.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="txt_wrap">
+                    <span>홍보 영상</span>
+                    <strong>2021년 셀트리온이 대한민국의 젊음에게</strong>
+                    <p>셀트리온은 인류의 건강과 복지 증진에 기여한다는 사명감 으로, 바이오시밀러 및 바이오신약을 연구·개발·생산하고 있는 대한민국 대표 바이오 기업입니다. 뛰어난 기술력과 혁신적인 아이디어를 바탕으로, 세계최초 항체 바이오시밀러 개발에 성공하여 바이오의약품 시장의 패러다임을 변화시키고 전 세계 바이오시밀러 시장을 선도하고 있습니다.</p>
+                </div>
+            </a>
+        </div><!--//     video_area   -->
+
+        <ul class="accordion_wrap">
+            <li>
+                <a href=""> 동물시험서 유효성 재확인 <span></span></a>
+                <div class="list_sub">
+                    <p>셀트리온은 코로나19 항체 치료제 렉키로나(CT-P59)의 남아공 ‘베타’ 변이 바이러스에 대한 동물효능시험 결과, 바이러스 역가 감소 및 체중 감소 방어 효과 등 유효성을 확인했다고 18일 밝혔다. </p>
+                </div>
+            </li>
+            <li>
+                <a href="">대규모 글로벌 임상 3상 탑라인 결과 효능, 안전성 입증 <span></span></a>
+                <div class="list_sub">
+                    <p>셀트리온은 코로나19 항체 치료제 '렉키로나'의 글로벌 임상 3상 탑라인(Top Line)[1] 결과를 발표하며 효능과 안전성을 입증했다고 14일 밝혔다.
+                        렉키로나 글로벌 임상 3상은 지난 1월부터 한국, 미국, 스페인, 루마니아 등 전 세계 13개 국가[2]에서 코로나19 경증 및 중등증 환자 1,315명을 모집해 지난 4월 렉키로나 투약을 완료했다. 이후 28일 간의 치료기간을 거쳐 이번 탑라인 결과를 발표하게 됐다.</p>
+                </div>
+            </li>
+            <li>
+                <a href="">한국인 최초 EY 세계 최우수 기업가상 수상 <span></span></a>
+                <div class="list_sub">
+                    <p>EY 세계 최우수 기업가상은 ‘비즈니스 분야의 오스카상’으로 불릴 정도로 세계적인 권위를 인정받고 있는 상으로, 멈추지 않는 도전과 리더십으로 혁신을 이끈 경영자에게 수여된다. 특히 이 상은 전 세계에서 국가별 ‘EY 최우수 기업가상’[1] 수상자들 중 단 한 명에게만 수여되기에 비즈니스 분야에서는 전 세계적으로 명성이 높다.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href=""> '익수다'에 지분 투자 "ADC 신약 파이프라인 확보" <span></span></a>
+                <div class="list_sub">
+                    <p>  셀트리온이 영국의 항체약물접합체(Antibody-Drug Conjugate, 이하 ADC) 개발사 '익수다 테라퓨틱스(Iksuda Therapeutics, 이하 익수다)'[1]에 지분을 투자해 ADC 신약 파이프라인 확보에 나선다.</p>
+                </div>
+            </li>
+            <li>
+                <a href=""> ㈜이셀과 국산화 바이오 부품 장기 공급계약 체결 <span></span></a>
+                <div class="list_sub">
+                    <p>4일 바이오 의약품 소재, 부품, 장비 (이하 소부장) 전문 업체(주)이셀 (대표이사: 김두현)과 본사 대회의실에서 자재 국산화 협약식을 개최하고 국내 바이오 소부장 자립화를 위한 지원을 본격화했다. </p>
+                </div>
+            </li>
+            <li>
+                <a href="">유럽 류마티스학회서 ‘유플라이마’ 임상 3상 결과 발표  <span></span></a>
+                <div class="list_sub">
+                    <p>셀트리온은 2~5일(현지시간 기준) 온라인으로 진행되는 유럽 류마티스학회(EULAR, European Congress of Rheumatology)에서 자가면역질환 치료제 휴미라(Humira, 성분명 : 아달리무맙)[1] 바이오시밀러 유플라이마(Yuflyma, 개발명 : CT-P17)의 임상 3상 결과를 발표했다고 2일 밝혔다. </p>
+                </div>
+            </li>
+            <li>
+                <a href=""> 지역사회에 코로나19 자가검사키트 1만개 기부<span></span></a>
+                <div class="list_sub">
+                    <p>코로나19 자가검사키트 '디아트러스트 코로나19 항원 홈 테스트(Celltrion DiaTrustTM COVID-19 Ag Home Test, 이하 디아트러스트 홈 테스트)’ 1만개를 인천사회복지공동모금회를 통해 인천광역시 연수구에 기부했다.  </p>
+                </div>
+            </li>
+        </ul><!--//     accordion_wrap   -->
+
+    </main>
+
+    <footer>
+        <h2><a href=""><span class="blind">로고</span></a></h2>
+        <ul>
+            <li><a href="">법적고지 </a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">수출입경영방침</a></li>
+            <li><a href="">내부정보관리규정</a></li>
+            <li><a href="">윤리경영</a></li>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">오시는 길</a></li>
+        </ul>
+        <div class="info">
+            <strong>Contact us</strong>
+            <a href="" class="mail">인천광역시 연수구 아카데미로 23
+            </a>
+            <a href="" class="link">FAMILY SITE <i class="fi-rr-arrow-right"></i></a>
+            <a href="tel:(+48) 032-850-5000" class="tel">(+48) 032-850-5000</a>           
+        </div>
+        <p class="copy">
+            COPYRIGHT CELLTRION INC.<br> ALL RIGHTS RESERVED.             
+        </p>
+
+
+        <a href="" class="the_top_btn"><i class="fi-rr-angle-small-up"></i><span class="blind">맨 위로 올라가기</span></a>
+
+
+    </footer>
+</body>
+</html>
