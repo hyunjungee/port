@@ -1,0 +1,174 @@
+/* 랜딩 */
+/*
+  가장중요한 조건
+  가로스롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+
+@media screen and (max-width: 1300px) { /*작은사이즈px 0~1300*/
+    header{ }
+    .home{ padding: 0 20px;}
+    .profile{ padding: 0 20px; }
+    .skills { padding: 0 20px;}
+    .portfolio{  padding: 0 20px;}
+    
+
+   } /*   //  1300px */
+
+
+
+
+
+
+
+
+
+
+
+
+/*테블릿*/
+    @media screen and (max-width: 1024px) { /*769사이즈로보기*/
+        header h1  {font-size: 20px; }
+        header .gnb ul li {font-size: 15px;}
+
+        .home{ display: list-item; justify-content: center; align-items: center;
+            margin-top: 150px;}
+        .home .main_txt {margin: 0 auto; text-align: center;}
+        .home .main_txt h2{font-size: 32px;}
+        .home .main_txt h2 img { width: 30px; }
+        .home .main_txt p { font-size: 20px;}
+        .more{padding: 7px 11px; font-size: 10px;}
+
+        .home .main_img {margin: 0 auto; padding: 40px 40px;}
+        .home .main_img img {width: calc(50% - 20px);}
+        @keyframes emoji01 {
+            0%{transform: translateY(0px); }
+            50%{transform: translateX(100px) scale(0.7) rotate(70deg); } 
+            80%{transform: translateY(100px) rotate(-20deg);}
+            100%{transform: translateY(0px) scale(1.5) ;}
+        }
+        @keyframes emoji02 {
+            0%{transform: translateY(0px);}
+            50%{transform: translateY(100px) scale(0.7) rotate(70deg);} 
+            80%{transform: translateX(-100px) rotate(-20deg);}
+            100%{transform: translateY(0px) scale(1.5);}
+        }
+        @keyframes emoji03 {
+            0%{transform: translateY(0px);}
+            50%{transform: translateY(-100px) scale(0.7) rotate(70deg);} 
+            80%{transform: translateX(100px) rotate(-20deg);}
+            100%{transform: translateY(0px) scale(1.5);}
+        }
+        @keyframes emoji04 {
+            0%{transform: translateY(0px);}
+            50%{transform: translateX(-100px) scale(0.7) rotate(170deg);} 
+            80%{transform: translateY(-100px) rotate(-20deg);}
+            100%{transform: translateY(0px) scale(1.5);}
+        }
+        h2.title { font-size: 32px; margin-bottom: 30px;}
+        h2.title img { width: 65px;}
+
+        .profile {margin-top: 100px; }
+        .profile .about_area p { font-size: 16px;}
+        .profile .intro_area .img_wrap {width: calc(50% - 20px);}
+        .profile .intro_area .txt_wrap {width: calc(50% - 20px);}
+        .profile .intro_area .txt_wrap strong {font-size: 22px; margin-top: 15px;}
+        .profile .intro_area .txt_wrap ul {font-size: 15px; line-height:2;}
+
+
+        .skills ul {padding: 0 10px;}
+
+        .portfolio {margin-top: 200px; padding: 0 20px;}
+        .portfolio ul {width: 100%; flex-direction: column;}
+        .portfolio ul li {width: 100%;}
+
+
+    } /*   //  1024px */
+
+
+
+
+
+
+
+
+/*모바일*/
+    @media screen and (max-width: 768px) { /*320기준으로포커스맞추기*/
+    header h1{ top: 20px; left: 10px;}
+    header::before {}
+    header .gnb {top: 70px; left:10px;}
+    header .gnb ul li {padding-left:0; padding-right: 10px; font-size: 12px;}
+
+    .home{}
+
+    .home .main_txt {width: 100%;}
+    .home .main_txt h2 {font-size: 25px;}
+
+    .home .main_txt p { font-size: 16px; line-height: 1.6; padding: 20px 0;}
+    .home .main_img {width: 100%; }
+    .home .main_img img {width: calc(50% - 5px);}
+    @keyframes emoji01 {
+        0%{transform: translateY(0px); }
+        50%{transform: translateX(50px) scale(0.5) rotate(70deg); } 
+        80%{transform: translateY(50px) rotate(-20deg);}
+        100%{transform: translateY(0px) scale(1.2) ;}
+    }
+    @keyframes emoji02 {
+        0%{transform: translateY(0px);}
+        50%{transform: translateY(50px) scale(0.5) rotate(70deg);} 
+        80%{transform: translateX(-50px) rotate(-20deg);}
+        100%{transform: translateY(0px) scale(1.2);}
+    }
+    @keyframes emoji03 {
+        0%{transform: translateY(0px);}
+        50%{transform: translateY(-50px) scale(0.5) rotate(70deg);} 
+        80%{transform: translateX(50px) rotate(-20deg);}
+        100%{transform: translateY(0px) scale(1.2);}
+    }
+    @keyframes emoji04 {
+        0%{transform: translateY(0px);}
+        50%{transform: translateX(-50px) scale(0.5) rotate(170deg);} 
+        80%{transform: translateY(-50px) rotate(-20deg);}
+        100%{transform: translateY(0px) scale(1.2);}
+    }
+    .home .main_img img {width: calc(50% - 5px);}
+
+    .skills ul{}
+
+    .profile {padding: 0 10px; margin-top: 0;  }
+    h2.title { font-size: 22px; line-height: 1.4;}
+    h2.title img { width: 55px;}
+    .profile .about_area p { font-size: 12px;}
+    .profile .intro_area {display: list-item; }
+    .profile .intro_area .img_wrap {width: 100%;}
+    .profile .intro_area .txt_wrap {width: 100%; margin-top: 20px; text-align: center;}
+    .profile .intro_area .txt_wrap strong {font-size: 17px; margin-top: 10px;}
+    .profile .intro_area .txt_wrap ul {  font-size: 12px;}
+    
+
+    .skills {padding-top: 100px; padding: 0; }
+    .skills ul {padding: 0 10px; text-align: center;}
+    .skills ul li {width: 100%; margin-bottom:20px; padding: 15px;}
+    .skills ul li strong {font-size: 18px;}
+    .skills ul li p {font-size: 14px;}
+
+    .portfolio {padding: 0 10px; margin-top: 100px;  }
+    .portfolio ul li .txt_wrap strong {font-size: 18px ; line-height: 30px; top: 20%;}
+    .portfolio ul li .txt_wrap .more {top: 60%;}
+
+    .contact{ margin-top: 100px; padding: 0 10px;}
+    .contact .info p {font-size: 15px;}
+    .contact .info .tel { font-size: 25px;}
+    .contact .info .email  { font-size: 25px;}
+    .contact .info .desc {font-size: 13px;}
+    .contact .copy {font-size: 11px; line-height: 1.2;}
+
+
+
+  }/*   //  768px */
