@@ -1,0 +1,38 @@
+/* 랜딩 */
+/* common */
+:root{
+    --blue:#1663f8;
+}
+
+.blind {
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    clip:rect(0,0,0,0);
+}
+
+.clear{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+h2.title{font-size: 60px; text-align: center; margin-bottom: 80px;  }
+h2.title img{width: 100px; display: inline-block; vertical-align: top; margin-top: -20px;}
+
+
+.ani01 {transform:translateX(-100px); opacity: 0;}
+.ani02 strong,
+.ani02 li{transform:translateX(10%); opacity: 0;}
+.ani03 p{transform:translateY(100%); opacity: 0;} /*안되는부분*/
+
+
+
+.more{ background:var(--blue); display: inline-block; padding: 15px 20px; border-radius: 50px; font-size: 12px; line-height: 30px; box-shadow: 0px 0px 20px -1px rgb(21 100 248 / 66%); transition: 0.5s; letter-spacing: 1px;}
+
+.more:hover{ transform: translateY(-10%); }
+
+.more span{ display: inline-block; width: 30px; height: 30px; background: #fff; border-radius: 50%; color:var(--blue); text-align: center; margin-right: 10px;}
+
+.more span i{ display: inline-block; vertical-align: top; margin-top: 1px;}
